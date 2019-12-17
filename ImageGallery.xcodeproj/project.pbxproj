@@ -16,12 +16,13 @@
 		22F1407523A727530044F243 /* ImageGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F1407423A727530044F243 /* ImageGalleryTests.swift */; };
 		22F1408023A727530044F243 /* ImageGalleryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F1407F23A727530044F243 /* ImageGalleryUITests.swift */; };
 		22F1409323A729DD0044F243 /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F1408E23A729DC0044F243 /* Gallery.swift */; };
-		22F1409423A729DD0044F243 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F1408F23A729DC0044F243 /* ImageViewController.swift */; };
+		22F1409423A729DD0044F243 /* ImageGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F1408F23A729DC0044F243 /* ImageGalleryViewController.swift */; };
 		22F1409523A729DD0044F243 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F1409023A729DC0044F243 /* StartViewController.swift */; };
 		22F1409623A729DD0044F243 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F1409123A729DC0044F243 /* ImageCell.swift */; };
-		22F1409723A729DD0044F243 /* ImgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F1409223A729DD0044F243 /* ImgViewController.swift */; };
+		22F1409723A729DD0044F243 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F1409223A729DD0044F243 /* ImageViewController.swift */; };
 		22F1409923A832490044F243 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F1409823A832490044F243 /* Extensions.swift */; };
-		22F1409B23A85C650044F243 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F1409A23A85C650044F243 /* Thumbnail.swift */; };
+		22F1409B23A85C650044F243 /* ThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F1409A23A85C650044F243 /* ThumbnailView.swift */; };
+		22F1409D23A8A5960044F243 /* ThumbnailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F1409C23A8A5960044F243 /* ThumbnailView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +58,13 @@
 		22F1407F23A727530044F243 /* ImageGalleryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryUITests.swift; sourceTree = "<group>"; };
 		22F1408123A727530044F243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F1408E23A729DC0044F243 /* Gallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gallery.swift; path = "../../ImageGallery Old/ImageGallery/Gallery.swift"; sourceTree = "<group>"; };
-		22F1408F23A729DC0044F243 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = "../../ImageGallery Old/ImageGallery/ImageViewController.swift"; sourceTree = "<group>"; };
+		22F1408F23A729DC0044F243 /* ImageGalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageGalleryViewController.swift; path = "../../ImageGallery Old/ImageGallery/ImageGalleryViewController.swift"; sourceTree = "<group>"; };
 		22F1409023A729DC0044F243 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartViewController.swift; path = "../../ImageGallery Old/ImageGallery/StartViewController.swift"; sourceTree = "<group>"; };
 		22F1409123A729DC0044F243 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCell.swift; path = "../../ImageGallery Old/ImageGallery/ImageCell.swift"; sourceTree = "<group>"; };
-		22F1409223A729DD0044F243 /* ImgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImgViewController.swift; path = "../../ImageGallery Old/ImageGallery/ImgViewController.swift"; sourceTree = "<group>"; };
+		22F1409223A729DD0044F243 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = "../../ImageGallery Old/ImageGallery/ImageViewController.swift"; sourceTree = "<group>"; };
 		22F1409823A832490044F243 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		22F1409A23A85C650044F243 /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
+		22F1409A23A85C650044F243 /* ThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailView.swift; sourceTree = "<group>"; };
+		22F1409C23A8A5960044F243 /* ThumbnailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbnailView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,13 +120,14 @@
 				22F1406323A7274A0044F243 /* Main.storyboard */,
 				22F1408E23A729DC0044F243 /* Gallery.swift */,
 				22F1409123A729DC0044F243 /* ImageCell.swift */,
-				22F1408F23A729DC0044F243 /* ImageViewController.swift */,
-				22F1409223A729DD0044F243 /* ImgViewController.swift */,
+				22F1408F23A729DC0044F243 /* ImageGalleryViewController.swift */,
+				22F1409223A729DD0044F243 /* ImageViewController.swift */,
 				22F1409023A729DC0044F243 /* StartViewController.swift */,
 				22F1408D23A727B70044F243 /* Supporting Files */,
 				22F1406B23A727520044F243 /* Info.plist */,
 				22F1409823A832490044F243 /* Extensions.swift */,
-				22F1409A23A85C650044F243 /* Thumbnail.swift */,
+				22F1409A23A85C650044F243 /* ThumbnailView.swift */,
+				22F1409C23A8A5960044F243 /* ThumbnailView.xib */,
 			);
 			path = ImageGallery;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				22F1406A23A727520044F243 /* LaunchScreen.storyboard in Resources */,
 				22F1406723A727520044F243 /* Assets.xcassets in Resources */,
+				22F1409D23A8A5960044F243 /* ThumbnailView.xib in Resources */,
 				22F1406523A7274A0044F243 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,12 +295,12 @@
 				22F1409323A729DD0044F243 /* Gallery.swift in Sources */,
 				22F1409923A832490044F243 /* Extensions.swift in Sources */,
 				22F1406223A7274A0044F243 /* ImageGalleryDocument.swift in Sources */,
-				22F1409423A729DD0044F243 /* ImageViewController.swift in Sources */,
+				22F1409423A729DD0044F243 /* ImageGalleryViewController.swift in Sources */,
 				22F1405E23A7274A0044F243 /* DocumentBrowserViewController.swift in Sources */,
 				22F1405C23A7274A0044F243 /* AppDelegate.swift in Sources */,
 				22F1409623A729DD0044F243 /* ImageCell.swift in Sources */,
-				22F1409723A729DD0044F243 /* ImgViewController.swift in Sources */,
-				22F1409B23A85C650044F243 /* Thumbnail.swift in Sources */,
+				22F1409723A729DD0044F243 /* ImageViewController.swift in Sources */,
+				22F1409B23A85C650044F243 /* ThumbnailView.swift in Sources */,
 				22F1409523A729DD0044F243 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

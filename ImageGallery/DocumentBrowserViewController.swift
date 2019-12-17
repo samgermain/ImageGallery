@@ -20,7 +20,7 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
         allowsPickingMultipleItems = false
         
         if UIDevice.current.userInterfaceIdiom == .pad{
-            template = try? FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true).appendingPathComponent("Untitled.json")
+            template = try? FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true).appendingPathComponent("Untitled.imageGallery")
             if template != nil {
                 allowsDocumentCreation = FileManager.default.createFile(atPath: template!.path, contents: Data())
             }
@@ -32,19 +32,19 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
     // MARK: UIDocumentBrowserViewControllerDelegate
     
     func documentBrowser(_ controller: UIDocumentBrowserViewController, didRequestDocumentCreationWithHandler importHandler: @escaping (URL?, UIDocumentBrowserViewController.ImportMode) -> Void) {
-//        let file = template
-//        let alert = UIAlertController(title: "Name", message: "Name the Gallery", preferredStyle: .alert)
-//        alert.addTextField(configurationHandler: {_ in
-//            alert.textFields![0].placeholder = "Untitled"
-//        })
-//        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {_ in
-//            file!.appendingPathComponent(alert.textFields![0].text!)
-//        }))
-//        alert.addAction(UIAlertAction(title:"Cancel", style: .cancel, handler: {_ in
-//            return
-//        }))
-//        present(alert, animated: true)
-        importHandler(template, .copy)
+        
+        let alert = UIAlertController(title: "Name", message: "Name the Gallery", preferredStyle: .alert)
+        alert.addTextField(configurationHandler: {_ in
+            alert.textFields![0].placeholder = "Untitled"
+        })
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {_ in
+            let fileName = alert.textFields![0].text! + ".imageGallery"
+            let newGal = try? FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask,   appropriateFor: nil, create: true).appendingPathComponent(fileName)
+            FileManager.default.createFile(atPath: newGal!.path, contents: Data())
+            importHandler(newGal, .copy)
+        }))
+        alert.addAction(UIAlertAction(title:"Cancel", style: .cancel, handler: nil))
+        present(alert, animated: true)
     }
     
     func documentBrowser(_ controller: UIDocumentBrowserViewController, didPickDocumentsAt documentURLs: [URL]) {

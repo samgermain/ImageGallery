@@ -26,7 +26,7 @@
         <!--Image Gallery View Controller-->
         <scene sceneID="UkF-rO-4es">
             <objects>
-                <viewController storyboardIdentifier="ImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T7f-FX-1Vq" customClass="ImageGalleryViewController" customModule="ImageGallery" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageGalleryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T7f-FX-1Vq" customClass="ImageGalleryViewController" customModule="ImageGallery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AV4-dr-uY6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="3014" y="664"/>
         </scene>
-        <!--Img View Controller-->
+        <!--Image View Controller-->
         <scene sceneID="onI-PO-jvr">
             <objects>
-                <viewController storyboardIdentifier="ImgViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jxN-TL-8qM" customClass="ImgViewController" customModule="ImageGallery" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jxN-TL-8qM" customClass="ImageViewController" customModule="ImageGallery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3U8-yK-OXW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
